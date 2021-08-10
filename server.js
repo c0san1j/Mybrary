@@ -25,13 +25,11 @@ mongoose
 		useUnifiedTopology: true,
 	})
 	.then((result) => {
-		app.listen(process.env.PORT || 5000, () =>
-			console.log(`Listening In Port: ${process.env.PORT}`)
-		);
+// 		app.listen(process.env.PORT || 5000, () =>
+// 			console.log(`Listening In Port: ${process.env.PORT}`)
+// 		);
 		console.log('Connected To Database');
 	})
 	.catch((err) => console.log(err));
 
-// app.listen(, () => {
-// 	console.log(`listening on ${process.env.PORT}`);
-// });
+app.listen(process.env.PORT || 3000)
